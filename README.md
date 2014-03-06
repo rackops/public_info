@@ -4,6 +4,7 @@ public_info
 Ohai plugin that uses whoami.rackops.org to return public IP and geoip data for a node
 This will fill a data structure named public_info with the following info using maxminds free geoip databases.
 
+```
 knife node show whoami-prod-01 -a public_info
 whoami-prod-01:
   public_info:
@@ -36,6 +37,7 @@ whoami-prod-01:
       ip:             162.242.217.12
       request:        162.242.217.12
     remote_ip:   128.66.0.1
-    
+```    
+
 This is useful for situations where the public IP address is not easily determinatable from within the server itself.
 For example, rackconnected servers in Rackspace's environment.
